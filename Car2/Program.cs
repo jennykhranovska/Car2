@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Car2 ferrari = new Car2();
+            Car2 ferrari = new Car2(); //   deklarere en ferrari
             ferrari.Color = "Red";
             ferrari.Brand = "Ferrari";
             ferrari.MaxSpeed = 380;
