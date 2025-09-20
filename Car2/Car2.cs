@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,13 +15,33 @@ namespace Car2
         public int HorsePower;
         public CarType CarType;
 
+        public Car2(string brand, string color, int maxSpeed, int horsePower, CarType carType) 
 
 
+        {
+            Brand = brand;
+            Color = color;
+            MaxSpeed = maxSpeed;
+            HorsePower = horsePower;
+            CarType = carType;
 
+             Console.WriteLine($"Min bil är {Brand} har en {Color} färg är med max {MaxSpeed} hastighet. Kraften är {HorsePower} , bilen är {CarType}");
+        }
+
+
+        public Car2(string brand, string color, int maxSpeed): this(brand, color, maxSpeed, 0, CarType.Gas)
+        {
+
+            Console.WriteLine($"{brand} + {color}");
+            
+
+        }
 
         public void ShowInfo()
         {
-            Console.WriteLine($"Carinfo: {Brand}, {Color}, {MaxSpeed}");
+            Console.WriteLine($"Carinfo:{Brand}, {Color},  {MaxSpeed}");
+     
+         
         }
         public void Drive()
         {

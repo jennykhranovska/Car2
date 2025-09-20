@@ -2,33 +2,21 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) 
+
         {
-            Car2 ferrari = new Car2(); //   deklarere en ferrari
-            ferrari.Color = "Red";
-            ferrari.Brand = "Ferrari";
-            ferrari.MaxSpeed = 380;
-            ferrari.HorsePower = 500;
-            ferrari.CarType = CarType.Gas;
+            Car2 Volvo = new Car2("Volvo", "Red", 300, 590, CarType.Electric); 
+           
 
-            Car2 volvo = new Car2();
-            volvo.Color = "Green";
-            volvo.Brand = " Volvo";
-            volvo.MaxSpeed = 350;
-            volvo.HorsePower = 450;
-            volvo.CarType = CarType.Disel;
+            Car2 Ferrari  = new Car2("Ferarri", "Grean", 350, 600, CarType.Hybrid);
 
+        
 
-            ferrari.ShowInfo();
-            ferrari.Drive();
-            ferrari.Honk();
-            ferrari.Fuel();
+            Volvo.ShowInfo();
+            Volvo.Drive();
+            Volvo.Honk();
+            Volvo.Fuel();
 
-
-            volvo.ShowInfo();
-            volvo.Fuel();
-            volvo.Honk();
-            volvo.Drive();
         }
 
 
